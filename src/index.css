@@ -24,6 +24,7 @@ section {
   --color-primary: oklch(0.83 0.0838 271.81);
   --color-surface: oklch(0.19 0.0103 276.44);
   --color-surf-container-high: oklch(0.29 0.0092 276.8);
+  --color-on-surface: oklch(0.92 0.0095 292.78);
 }
 
 @layer utilities {
@@ -37,8 +38,29 @@ section {
 }
 
 @layer components {
+  .padding-x-lg {
+    @apply px-5 md:px-20;
+  }
+
+  .grid-4-cols {
+    @apply grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-7;
+  }
+
+  .hero-main-layout {
+    @apply relative overflow-hidden bg-black;
+    background: linear-gradient(
+      180deg,
+      oklch(0 0 0) 0%,
+      oklch(0.19 0.0103 276.44) 93.75%
+    );
+  }
+
   .hero-layout {
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
+  }
+
+  .hero-3d-layout {
+    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
   }
 
   .hero-text {
@@ -79,10 +101,6 @@ section {
         @apply size-5 xl:-translate-y-32 translate-y-0 animate-bounce group-hover:translate-y-0 transition-all duration-500;
       }
     }
-  }
-
-  .hero-3d-layout {
-    @apply xl:w-[70%] w-full h-full min-h-[50vh] absolute xl:-top-20 top-24 xl:-right-20 right-0;
   }
 }
 

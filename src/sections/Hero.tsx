@@ -1,6 +1,7 @@
 /* COMPONENTS */
-import Button from '../components/button.tsx';
+import Button from '../components/Button.tsx';
 import HeroExperience from '../components/HeroModels/HeroExperience.tsx';
+import AnimatedCounter from '../components/AnimatedCounter.tsx';
 
 /* CONSTANTS */
 import { words } from '../constants';
@@ -9,7 +10,7 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative overflow-hidden"
+      className="hero-main-layout"
       aria-labelledby="hero-heading"
     >
       <div className="absolute top-0 left-0 z-10">
@@ -42,7 +43,7 @@ export default function Hero() {
                       >
                         <img
                           src={word.imgPath}
-                          alt={`${word.text} icon`}
+                          alt=""
                           className="xl:size-12 md:size-10 size-7 md:p-2 p-1 rounded-full bg-primary"
                           role="presentation"
                           aria-hidden="true"
@@ -62,10 +63,9 @@ export default function Hero() {
               for code.
             </p>
             <Button
-              id="button"
               text="See My Work"
               className="md:w-80 md:h-16 w-60 h-12"
-              ariaLabel="View my portfolio projects"
+              ariaLabel="Scroll to portfolio statistics"
             />
           </div>
         </header>
@@ -81,6 +81,8 @@ export default function Hero() {
           </figcaption>
         </figure>
       </div>
+
+      <AnimatedCounter />
     </section>
   );
 }
