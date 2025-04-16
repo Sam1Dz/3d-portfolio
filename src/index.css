@@ -55,6 +55,26 @@ section {
     );
   }
 
+  @media only screen and (max-width: 1024px) {
+    .hero-main-layout {
+      background: linear-gradient(
+        180deg,
+        oklch(0 0 0) 0%,
+        oklch(0.19 0.0103 276.44) 75%
+      );
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    .hero-main-layout {
+      background: linear-gradient(
+        180deg,
+        oklch(0 0 0) 0%,
+        oklch(0.19 0.0103 276.44) 56.25%
+      );
+    }
+  }
+
   .hero-layout {
     @apply relative z-10 xl:mt-20 mt-32 md:h-dvh h-[80vh] flex xl:items-center items-start justify-center;
   }
