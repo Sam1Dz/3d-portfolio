@@ -1,5 +1,6 @@
 /* COMPONENTS */
 import Button from '../components/button.tsx';
+import HeroExperience from '../components/HeroModels/HeroExperience.tsx';
 
 /* CONSTANTS */
 import { words } from '../constants';
@@ -70,6 +71,15 @@ export default function Hero() {
         </header>
 
         {/* RIGHT: 3D Model or Visual */}
+        <figure
+          className="hero-3d-layout"
+          aria-label="3D interactive room visualization"
+        >
+          <HeroExperience />
+          <figcaption className="sr-only">
+            A 3D model of a modern workspace room.
+          </figcaption>
+        </figure>
       </div>
     </section>
   );
