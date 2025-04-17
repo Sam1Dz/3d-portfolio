@@ -1,10 +1,12 @@
+import React from 'react';
+
 /* SECTIONS */
-import Hero from './sections/Hero.tsx';
+import Hero from './sections/Hero';
 
 export default function App() {
   return (
-    <main aria-label="Portfolio main content">
+    <React.Fragment>
       <Hero />
-    </main>
+    </React.Fragment>
   );
 }

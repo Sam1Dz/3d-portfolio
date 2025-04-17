@@ -1,7 +1,7 @@
 {
   "name": "3d-portfolio",
   "description": "Learning to build a visually captivating 3D portfolio with React.js and Three.js!. This fork is written in Typescript with some color theme change ",
-  "version": "2025.416",
+  "version": "2025.417",
   "private": true,
   "repository": {
     "type": "git",
@@ -48,13 +48,12 @@
     "@types/react-dom": "^19.1.2",
     "@vitejs/plugin-react": "^4.4.0",
     "eslint": "^9.24.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "prettier": "^3.5.3",
     "typescript": "~5.8.3",
     "typescript-eslint": "^8.30.1",
-    "vite": "^6.3.0"
+    "vite": "^6.3.1"
   }
 }
