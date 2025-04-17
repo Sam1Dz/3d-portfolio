@@ -1,3 +1,7 @@
+/* GSAP */
+import gsap from 'gsap';
+import { useGSAP } from '@gsap/react';
+
 /* COMPONENTS */
 import Button from '../components/Button.tsx';
 import AnimatedCounter from '../components/AnimatedCounter.tsx';
@@ -7,6 +11,14 @@ import HeroExperience from '../components/models/hero_models/HeroExperience.tsx'
 import { words } from '../constants';
 
 export default function Hero() {
+  useGSAP(() => {
+    gsap.fromTo(
+      '.hero-text h1',
+      { y: 50, opacity: 0 },
+      { y: 0, opacity: 1, stagger: 0.2, duration: 1, ease: 'power2.inOut' },
+    );
+  });
+
   return (
     <section id="hero" className="hero-main-layout">
       <div className="absolute top-0 left-0 z-10">
