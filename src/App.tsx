@@ -2,8 +2,9 @@ import React from 'react';
 
 /* SECTIONS */
 import Hero from './sections/Hero';
-import Showcase from './sections/Showcase';
 import Navbar from './components/Navbar';
+import Company from './sections/Company';
+import Showcase from './sections/Showcase';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <Navbar />
       <Hero />
       <Showcase />
+      <Company />
     </React.Fragment>
   );
 }
